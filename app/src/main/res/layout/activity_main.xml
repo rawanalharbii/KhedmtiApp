@@ -49,7 +49,7 @@ android:orientation="vertical"
             android:layout_centerHorizontal="true" />
 
         <Button
-            android:layout_width="150dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="دخول"
             android:id="@+id/button2"
@@ -60,7 +60,7 @@ android:orientation="vertical"
             android:layout_marginTop="5dp" />
 
         <Button
-            android:layout_width="150dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="تسجيل كمقدم خدمه"
             android:id="@+id/button3"
@@ -71,7 +71,7 @@ android:orientation="vertical"
             android:layout_marginTop="10dp" />
 
         <Button
-            android:layout_width="150dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="تسجيل كعميل"
             android:id="@+id/button5"

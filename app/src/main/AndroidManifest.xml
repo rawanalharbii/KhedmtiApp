@@ -17,15 +17,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Main2Activity"
-            android:label="@string/title_activity_main2" />
-        <activity
-            android:name=".registration"
-            android:label="@string/title_activity_registration" />
-        <activity
-            android:name=".home"
-            android:label="@string/title_activity_home" />
+      
         <activity
             android:name=".EditServiceProviderPage"
             android:label="@string/title_activity_edit_service_provider_page" />
@@ -44,15 +36,11 @@
         <activity
             android:name=".CustomerOrderScreen"
             android:label="@string/title_activity_customer_order_screen" />
-        <activity
-            android:name=".SettingsScreen"
-            android:label="@string/title_activity_settings_screen" />
+
         <activity
             android:name=".CustomerOrdersList"
             android:label="@string/title_activity_customer_orders_list" />
-        <activity
-            android:name=".KhedmtiMain"
-            android:label="@string/title_activity_khedmti_main" />
+
         <activity
             android:name=".ProviderRegistration"
             android:label="@string/title_activity_provider_registration" />
@@ -92,15 +80,7 @@
         <activity
             android:name=".SPPrprpfile"
             android:label="@string/title_activity_spprprpfile" />
-        <activity
-            android:name=".login"
-            android:label="@string/title_activity_login" />
-        <activity
-            android:name=".retrievepassword"
-            android:label="@string/title_activity_retrievepassword" />
-        <activity
-            android:name=".customerregistration"
-            android:label="@string/title_activity_customerregistration"></activity>
+
     </application>
 
 </manifest>
