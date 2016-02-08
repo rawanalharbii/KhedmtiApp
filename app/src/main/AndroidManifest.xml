@@ -37,7 +37,70 @@
             android:label="@string/title_activity_edit_customer_profile_screen" />
         <activity
             android:name=".editOrderStatsScreen"
-            android:label="@string/title_activity_edit_order_stats_screen"></activity>
+            android:label="@string/title_activity_edit_order_stats_screen" />
+        <activity
+            android:name=".ManageNewOrderScreen"
+            android:label="@string/title_activity_manage_new_order_screen" />
+        <activity
+            android:name=".CustomerOrderScreen"
+            android:label="@string/title_activity_customer_order_screen" />
+        <activity
+            android:name=".SettingsScreen"
+            android:label="@string/title_activity_settings_screen" />
+        <activity
+            android:name=".CustomerOrdersList"
+            android:label="@string/title_activity_customer_orders_list" />
+        <activity
+            android:name=".KhedmtiMain"
+            android:label="@string/title_activity_khedmti_main" />
+        <activity
+            android:name=".ProviderRegistration"
+            android:label="@string/title_activity_provider_registration" />
+        <activity
+            android:name=".RegistrationConditions"
+            android:label="@string/title_activity_registration_conditions" />
+        <activity
+            android:name=".HomeScreen"
+            android:label="@string/title_activity_home_screen" />
+        <activity
+            android:name=".Search"
+            android:label="@string/title_activity_search" />
+        <activity
+            android:name=".EditServiceScreen"
+            android:label="@string/title_activity_edit_service_screen" />
+        <activity
+            android:name=".CustomerPage"
+            android:label="@string/title_activity_customer_page" />
+        <activity
+            android:name=".ServiceProviderPage"
+            android:label="@string/title_activity_service_provider_page" />
+        <activity
+            android:name=".ContactUs"
+            android:label="@string/title_activity_contact_us" />
+        <activity
+            android:name=".ContactUsFeedback"
+            android:label="@string/title_activity_contact_us_feedback" />
+        <activity
+            android:name=".SPNewOrders"
+            android:label="@string/title_activity_spnew_orders" />
+        <activity
+            android:name=".SPManageOrders"
+            android:label="@string/title_activity_spmanage_orders" />
+        <activity
+            android:name=".Setting"
+            android:label="@string/title_activity_setting" />
+        <activity
+            android:name=".SPPrprpfile"
+            android:label="@string/title_activity_spprprpfile" />
+        <activity
+            android:name=".login"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".retrievepassword"
+            android:label="@string/title_activity_retrievepassword" />
+        <activity
+            android:name=".customerregistration"
+            android:label="@string/title_activity_customerregistration"></activity>
     </application>
 
 </manifest>

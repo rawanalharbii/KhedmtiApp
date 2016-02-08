@@ -1,0 +1,203 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#dcd9d9"
+android:orientation="vertical"
+    tools:context="android.KhedmtiApp.EditServiceScreen">
+
+
+<LinearLayout
+    android:id="@+id/textView_welcome"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#6da5f9"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchView" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:paddingLeft="60dp"
+        android:text="خـدمتي"
+        android:textColor="#ffffff"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="14dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:onClick="back"
+        android:src="@drawable/left" />
+
+
+</LinearLayout>
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="200dp"
+    android:id="@+id/imageView14"
+    android:layout_gravity="center_horizontal"
+    android:src="@drawable/profilepic" />
+
+    <EditText
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editText27"
+        android:text="السعر"
+        android:layout_alignTop="@+id/radioButton4"
+        android:layout_toRightOf="@+id/textView15"
+        android:layout_toEndOf="@+id/textView15"
+        android:layout_gravity="right"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editText28"
+        android:text="المعيار"
+        android:layout_below="@+id/textView15"
+        android:layout_toLeftOf="@+id/editText19"
+        android:layout_toStartOf="@+id/editText19"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="الوصف"
+        android:id="@+id/textView16"
+        android:textColor="#322424"
+        android:textSize="30dp"
+        android:background="#e6e0e0"
+        android:layout_below="@+id/editText18"
+        android:layout_alignRight="@+id/editText18"
+        android:layout_alignEnd="@+id/editText18"
+        android:layout_gravity="right" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editText29"
+        android:text="وصف الخدمة"
+        android:layout_alignTop="@+id/radioButton4"
+        android:layout_toRightOf="@+id/textView15"
+        android:layout_toEndOf="@+id/textView15"
+        android:textAlignment="center" />
+
+    <ScrollView
+
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="27.38" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+</ScrollView>
+
+
+    <Button
+    android:layout_width="140dp"
+    android:layout_height="30dp"
+    android:text="حفظ"
+    android:id="@+id/button11"
+    android:background="#6da5f9"
+    android:layout_gravity="center_horizontal" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.8"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+
+    <LinearLayout
+        android:id="@+id/home1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp"
+        android:background="#c2bdbd"
+        android:gravity="center"
+        android:onClick="GoHome">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/hom" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/notifications1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1"
+        android:background="#c2bdbd"
+        android:gravity="center"
+        android:onClick="GoNotifications">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/noti" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/profile1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1"
+        android:background="#c2bdbd"
+        android:gravity="center"
+        android:onClick="GoProfile">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/pro" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>

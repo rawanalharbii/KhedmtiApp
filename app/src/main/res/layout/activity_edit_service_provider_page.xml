@@ -1,89 +1,229 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="android.KhedmtiApp.EditServiceProviderPage">
 
-    <RelativeLayout
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
+        android:background="#dcd9d9"
+        android:orientation="vertical"
+    tools:context="android.KhedmtiApp.EditServiceProviderPage">
+
+
+
+        <LinearLayout
+            android:id="@+id/textView_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6da5f9"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <SearchView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/searchView" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:paddingLeft="60dp"
+                android:text="خـدمتي"
+                android:textColor="#ffffff"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="14dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="settings"
+                android:src="@drawable/list" />
+
+
+        </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:id="@+id/imageView14"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/profilepic" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editText21"
+        android:layout_below="@+id/imageView2"
+        android:text="الجوال"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/relativeLayout">
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView2"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="81dp"
-            android:src="@drawable/profilepic" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editText22"
+        android:layout_below="@+id/imageView2"
+        android:text="البريد الإلكتروني"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center" />
 
-        <EditText
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editText24"
+        android:layout_below="@+id/imageView2"
+        android:text="كلمة المرور"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="387dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editText23"
+        android:layout_below="@+id/imageView2"
+        android:text="تأكيد كلمة المرور "
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="right"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editText25"
+        android:layout_below="@+id/imageView2"
+        android:text="الخبرة"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center" />
+
+    <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="27.38" >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/editText26"
+                    android:text="حساباتي"
+                    android:layout_gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </ScrollView>
+
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:text="حفظ"
+        android:id="@+id/button11"
+        android:background="#6da5f9"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:ems="10"
-            android:id="@+id/editText4"
-            android:layout_below="@+id/imageView2"
-            android:text="البريد الإلكتروني"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/editText5"
-            android:layout_gravity="center_horizontal"
-            android:inputType="textWebEmailAddress"
-            android:text="كلمة المرور"
-            android:password="false"
-            android:layout_below="@+id/editText4"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/editText6"
-            android:layout_gravity="center_horizontal"
-            android:inputType="textWebEmailAddress"
-            android:text="تأكيد كلمة المرور"
-            android:password="false"
-            android:layout_below="@+id/editText5"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:ems="10"
-            android:id="@+id/editText7"
-            android:text="الخبرة"
-            android:layout_below="@+id/editText6"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            <LinearLayout
+                android:id="@+id/home1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="12dp"
+                android:background="#c2bdbd"
+                android:gravity="center"
+                android:onClick="GoHome">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="حغظ"
-            android:id="@+id/button"
-            android:layout_alignParentBottom="true"
-            android:layout_alignLeft="@+id/imageView2"
-            android:layout_alignStart="@+id/imageView2"
-            android:layout_alignRight="@+id/imageView2"
-            android:layout_alignEnd="@+id/imageView2"
-            android:background="#6da5f9" />
 
-    </RelativeLayout>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/hom" />
 
-</RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/notifications1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:background="#c2bdbd"
+                android:gravity="center"
+                android:onClick="GoNotifications">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/noti" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/profile1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:background="#c2bdbd"
+                android:gravity="center"
+                android:onClick="GoProfile">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/pro" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
